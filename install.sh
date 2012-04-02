@@ -4,8 +4,8 @@ if [ -x "/usr/bin/git" ] ; then
   git clone 'https://github.com/Soulou/Soulou-s-Vim' "$HOME/Soulou-s-Vim"
   if [ -d "$HOME/.vim" ] ; then
     mv "$HOME/.vim" "$HOME/.vim.bak"
-    mv "$HOME/Soulou-s-Vim" "$HOME/.vim"
   fi
+  mv "$HOME/Soulou-s-Vim" "$HOME/.vim"
 else
   echo "Please install git" 1>&2
   exit -1
