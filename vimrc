@@ -35,9 +35,6 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 " Changer de buffer
 nnoremap <leader><leader> <c-^>
 
-" On redéfini <Esc>
-imap ww <Esc>
-
 " Changement pour gérer les splits
 nnoremap <Leader>. <C-W><C-W>
 nnoremap <Leader>_ <C-W>_
