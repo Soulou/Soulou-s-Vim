@@ -1,5 +1,6 @@
 set number
 set nocompatible
+set hidden
 syntax enable
 set mouse=a
 set encoding=utf-8
