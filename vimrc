@@ -50,3 +50,5 @@ colorscheme desert
 set cursorline
 :hi CursorLine cterm=NONE
 set autowriteall
+
+let g:template_author=system('whoami')
