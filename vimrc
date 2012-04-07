@@ -34,9 +34,6 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 " Changer de buffer
 nnoremap <leader><leader> <c-^>
 
-" On redéfini <Esc>
-imap ww <Esc>
-
 " Changement pour gérer les splits
 nnoremap <Leader>. <C-W><C-W>
 nnoremap <Leader>_ <C-W>_
@@ -47,6 +44,8 @@ nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 set guioptions-=T
 set t_Co=256
 set background=dark
-colorscheme mustang2
+" colorscheme mustang2
+colorscheme desert
 set cursorline
 :hi CursorLine cterm=NONE
+set autowriteall
