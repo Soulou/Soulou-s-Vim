@@ -17,6 +17,7 @@ set incsearch
 set ignorecase
 set smartcase
 
+
 " Pathogen plugin management
 call pathogen#infect()
 
@@ -31,6 +32,11 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>t :CommandT<cr>
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+
+" Voir les caractères invisibles
+nmap <leader>l :set list!<CR>
+" Remapper le caractère invisible pour la tabulation
+set listchars=tab:▸\ ,eol:$
 
 " Changer de buffer
 nnoremap <leader><leader> <c-^>
