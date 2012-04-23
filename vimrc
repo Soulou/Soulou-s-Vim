@@ -58,3 +58,5 @@ set cursorline
 set autowriteall
 
 let g:template_author=system('whoami')
+
+au BufNewFile,BufRead *.hamlc set ft=haml
