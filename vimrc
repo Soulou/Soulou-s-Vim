@@ -33,6 +33,10 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
+nmap <F2> :TagListToggle<CR>
+nmap <F3> :NERDTreeToggle<CR>
+nmap <F4> :NumbersToggle<CR>
+
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
 
