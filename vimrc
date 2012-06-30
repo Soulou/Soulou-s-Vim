@@ -8,8 +8,6 @@ set showcmd
 filetype plugin indent on
 
 set nowrap " Don't wrap lines
-set tabstop=2 shiftwidth=2
-set expandtab
 set backspace=indent,eol,start
 
 set hlsearch
