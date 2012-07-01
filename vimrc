@@ -8,8 +8,6 @@ set showcmd
 filetype plugin indent on
 
 set nowrap " Don't wrap lines
-set tabstop=2 shiftwidth=2
-set expandtab
 set backspace=indent,eol,start
 
 set hlsearch
@@ -35,6 +33,10 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
+nmap <F2> :TagListToggle<CR>
+nmap <F3> :NERDTreeToggle<CR>
+nmap <F4> :NumbersToggle<CR>
+
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
 
