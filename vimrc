@@ -59,4 +59,7 @@ set autowriteall
 
 let g:template_author=system('whoami')
 
-au BufNewFile,BufRead *.hamlc set ft=haml
+au BufNewFile,BufRead *.hamlc set ft=haml 
+
+" disable Keyword completion
+let g:acp_behaviorKeywordLength = -1

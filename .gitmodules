@@ -28,3 +28,6 @@
 [submodule "bundle/vim-twig-ft"]
 	path = bundle/vim-twig-ft
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
