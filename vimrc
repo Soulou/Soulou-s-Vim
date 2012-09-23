@@ -56,7 +56,7 @@ set cursorline
 :hi CursorLine cterm=NONE
 set autowriteall
 
-let g:template_author=system('whoami')
+let g:template_author=system("getent passwd $USER | cut -d ':' -f 5 | tr -d '\n,'")
 
 au BufNewFile,BufRead *.hamlc set ft=haml 
 
