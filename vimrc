@@ -27,15 +27,12 @@ let mapleader=','
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-map <leader>t :CommandT<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>t :CtrlP<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
 nmap <F2> :TagListToggle<CR>
 nmap <F3> :NERDTreeToggle<CR>
-nmap <F4> :NumbersToggle<CR>
 
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
