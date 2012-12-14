@@ -63,3 +63,7 @@ au BufNewFile,BufRead *.hamlc set ft=haml
 
 " disable Keyword completion
 let g:acp_behaviorKeywordLength = -1
+
+set laststatus=2
+set statusline=%{GitBranch()}
+

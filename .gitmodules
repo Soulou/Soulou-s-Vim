@@ -31,9 +31,6 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "snippets"]
-	path = bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
@@ -52,3 +49,6 @@
 [submodule "bundle/vim-ctrlp"]
 	path = bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = git@github.com:motemen/git-vim.git
