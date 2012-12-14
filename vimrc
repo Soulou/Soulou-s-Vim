@@ -33,9 +33,8 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
-nmap <F2> :TagListToggle<CR>
+nmap <F2> :TlistToggle<CR>
 nmap <F3> :NERDTreeToggle<CR>
-nmap <F4> :NumbersToggle<CR>
 
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
@@ -49,6 +48,7 @@ nnoremap <Leader>_ <C-W>_
 nnoremap <Leader><Bar> <C-W><Bar>
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <c-s> :!zsh<CR>
 
 set guioptions-=T
 set t_Co=256
