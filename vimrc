@@ -65,5 +65,4 @@ au BufNewFile,BufRead *.hamlc set ft=haml
 let g:acp_behaviorKeywordLength = -1
 
 set laststatus=2
-set statusline=%{GitBranch()}
-
+let g:Powerline_symbols = 'fancy'
