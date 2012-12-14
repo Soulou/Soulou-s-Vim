@@ -29,10 +29,10 @@
 	path = bundle/vim-twig-ft
 	url = https://github.com/beyondwords/vim-twig.git
 [submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
+	path = bundle/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
 [submodule "snippets"]
-	path = snippets
+	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
@@ -43,9 +43,12 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
-[submodule "bundle/vim-taglist"]
-	path = bundle/vim-taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/vim-taglist"]
+	path = bundle/vim-taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/vim-ctrlp"]
+	path = bundle/vim-ctrlp
+	url = https://github.com/kien/ctrlp.vim.git

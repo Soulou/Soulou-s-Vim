@@ -27,9 +27,7 @@ let mapleader=','
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-map <leader>t :CommandT<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>t :CtrlP<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
@@ -59,6 +57,9 @@ set cursorline
 :hi CursorLine cterm=NONE
 set autowriteall
 
-let g:template_author=system('whoami')
+let g:template_author=system("getent passwd $USER | cut -d ':' -f 5 | tr -d '\n,'")
 
-au BufNewFile,BufRead *.hamlc set ft=haml
+au BufNewFile,BufRead *.hamlc set ft=haml 
+
+" disable Keyword completion
+let g:acp_behaviorKeywordLength = -1
