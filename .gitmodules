@@ -16,9 +16,6 @@
 [submodule "bundle/vim-nerdtree"]
 	path = bundle/vim-nerdtree
 	url = https://github.com/scrooloose/nerdtree/
-[submodule "bundle/AutoComplPop"]
-	path = bundle/AutoComplPop
-	url = https://github.com/vim-scripts/AutoComplPop.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -40,9 +37,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/vim-taglist"]
 	path = bundle/vim-taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
@@ -55,3 +49,9 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
+[submodule "bundle/vim-pinpoint"]
+	path = bundle/vim-pinpoint
+	url = git@github.com:fmoralesc/vim-pinpoint.git
+[submodule "bundle/vim-youcompleteme"]
+	path = bundle/vim-youcompleteme
+	url = git@github.com:Valloric/YouCompleteMe.git
