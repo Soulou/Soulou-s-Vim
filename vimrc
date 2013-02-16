@@ -40,6 +40,8 @@ nmap <leader>l :set list!<CR>
 nmap <F2> :TlistToggle<CR>
 nmap <F3> :NERDTreeToggle<CR>
 nmap <F12> :!zsh<CR>
+nmap <leader>z zR<CR>
+nmap <leader>a za<CR>
 
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
