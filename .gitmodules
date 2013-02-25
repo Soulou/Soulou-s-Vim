@@ -58,3 +58,6 @@
 [submodule "bundle/vim-youcompleteme"]
 	path = bundle/vim-youcompleteme
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:fsouza/go.vim.git
