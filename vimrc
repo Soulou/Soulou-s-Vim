@@ -39,6 +39,7 @@ map <leader>t :CtrlP<cr>
 nmap <leader>l :set list!<CR>
 nmap <F2> :TlistToggle<CR>
 nmap <F3> :NERDTreeToggle<CR>
+set pastetoggle=<F4>
 nmap <F12> :!zsh<CR>
 nmap <leader>z zR<CR>
 nmap <leader>a za<CR>
@@ -88,4 +89,4 @@ if has("autocmd")
 endif
 
 
-
+set hi=150
