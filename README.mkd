@@ -4,5 +4,5 @@ Personal vim configuration
 
 Installation 
 
--- ```wget 'https://raw.github.com/ares-ensiie/vim_conf/master/install.sh' -O - | sh```
+-- ```wget 'https://raw.github.com/Soulou/Soulou-s-vim/master/install.sh' -O - | sh```
 
