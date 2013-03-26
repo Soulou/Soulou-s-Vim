@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -x "/usr/bin/git" ] ; then
-  git clone --quiet 'https://github.com/ares-ensiie/vim_conf' "$HOME/vim_conf"
+  git clone --quiet 'https://github.com/Soulou/Soulou-s-vim' "$HOME/vim_conf"
   cd "$HOME/vim_conf"
   git submodule --quiet update --init
   if [ -d "$HOME/.vim" ] ; then
