@@ -66,10 +66,10 @@
 	url = https://github.com/derekwyatt/vim-scala
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
-	url = git@github.com:digitaltoad/vim-jade.git
+	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/vim-llvm"]
 	path = bundle/vim-llvm
-	url = git@github.com:Superbil/llvm.vim.git
+	url = https://github.com/Superbil/llvm.vim.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
