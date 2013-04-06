@@ -64,3 +64,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = git@github.com:digitaltoad/vim-jade.git
