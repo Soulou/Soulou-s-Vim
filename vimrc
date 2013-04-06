@@ -66,7 +66,7 @@ set cursorline
 hi CursorLine cterm=NONE
 set autowriteall
 
-let g:template_author=system("getent passwd | grep $USER | cut -d':' -f5")
+let g:template_author=system("getent passwd | grep $USER | cut -d':' -f5 | tr -d '\n'")
 
 au BufNewFile,BufRead *.hamlc set ft=haml 
 
@@ -90,3 +90,4 @@ endif
 
 
 set hi=150
+let g:ycm_key_invoke_completion = '<C-Space>'
