@@ -48,19 +48,19 @@
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
-	url = git@github.com:motemen/git-vim.git
+	url = https://github.com/motemen/git-vim.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
 [submodule "bundle/vim-pinpoint"]
 	path = bundle/vim-pinpoint
-	url = git@github.com:fmoralesc/vim-pinpoint.git
+	url = https://github.com/fmoralesc/vim-pinpoint.git
 [submodule "bundle/vim-youcompleteme"]
 	path = bundle/vim-youcompleteme
-	url = git@github.com:Valloric/YouCompleteMe.git
+	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/vim-go-complete"]
 	path = bundle/vim-go-complete
-	url = git@github.com:fsouza/go.vim.git
+	url = https://github.com/fsouza/go.vim.git
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
