@@ -15,7 +15,7 @@
 	url = https://github.com/tpope/vim-fugitive/
 [submodule "bundle/vim-nerdtree"]
 	path = bundle/vim-nerdtree
-	url = https://github.com/scrooloose/nerdtree/
+	url = https://github.com/scrooloose/nerdtree
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
