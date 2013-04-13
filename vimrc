@@ -15,11 +15,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-:imap <C-h> <Esc>h
-:imap <C-j> <Esc>j
-:imap <C-k> <Esc>k
-:imap <C-l> <Esc>l
-
 " Pathogen plugin management
 call pathogen#infect()
 
@@ -32,17 +27,21 @@ let mapleader=','
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 
-imap <C><Space> <c-x><c-o>
 map <leader>t :CtrlP<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
-nmap <F2> :TlistToggle<CR>
-nmap <F3> :NERDTreeToggle<CR>
+map <F2> :TlistToggle<CR>
+map <F3> :NERDTreeToggle<CR>
+map <F5> :YcmForceCompileAndDiagnostics<CR>a
+map <F12> :!zsh<CR>
+map! <F2> <ESC>:TlistToggle<CR>
+map! <F3> <ESC>:NERDTreeToggle<CR>
+map! <F5> <ESC>:YcmForceCompileAndDiagnostics<CR>a
+map! <F12> <ESC>:!zsh<CR>
 set pastetoggle=<F4>
-nmap <F12> :!zsh<CR>
-nmap <leader>z zR<CR>
-nmap <leader>a za<CR>
+map <leader>z zR<CR>
+map <leader>a za<CR>
 
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
@@ -90,4 +89,7 @@ endif
 
 
 set hi=150
-let g:ycm_key_invoke_completion = '<C-Space>'
+let g:ycm_key_invoke_completion = '<C-l>'
+let g:ycm_min_num_of_chars_for_completion = 1
+
+
