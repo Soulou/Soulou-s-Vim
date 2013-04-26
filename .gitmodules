@@ -76,3 +76,6 @@
 [submodule "bundle/vim-syntastic"]
 	path = bundle/vim-syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-ultisnips"]
+	path = bundle/vim-ultisnips
+	url = https://github.com/vim-scripts/UltiSnips.git
