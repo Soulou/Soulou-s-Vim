@@ -26,8 +26,8 @@ let mapleader=','
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-
 map <leader>t :CtrlP<cr>
+map <leader>o :CtrlPBuffer<cr>
 
 " Voir les caractères invisibles
 nmap <leader>l :set list!<CR>
