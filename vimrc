@@ -92,4 +92,7 @@ set hi=150
 let g:ycm_key_invoke_completion = '<C-l>'
 let g:ycm_min_num_of_chars_for_completion = 1
 
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
