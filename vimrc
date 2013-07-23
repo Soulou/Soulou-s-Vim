@@ -1,6 +1,6 @@
-set number
 set nocompatible
 set hidden
+set number
 syntax enable
 set mouse=a
 set encoding=utf-8
@@ -19,6 +19,17 @@ set smartcase
 call pathogen#infect()
 
 let mapleader=','
+nnoremap <Leader>. <C-W><C-W>
+nnoremap <Leader>_ <C-W>_
+nnoremap <Leader><Bar> <C-W><Bar>
+nnoremap <leader><leader> <c-^>
+nnoremap <Leader>v :tabe ~/.vim/vimrc<CR>
+
+map <leader>o :CtrlPBuffer<cr>
+map <leader>t :CtrlP<cr>
+
+" Voir les caractères invisibles
+nmap <leader>l :set list!<CR>
 
 " CommandT rescan for new or deleted files
 
@@ -26,15 +37,11 @@ let mapleader=','
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-map <leader>t :CtrlP<cr>
-map <leader>o :CtrlPBuffer<cr>
-
-" Voir les caractères invisibles
-nmap <leader>l :set list!<CR>
 map <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 map <F5> :YcmForceCompileAndDiagnostics<CR>a
 map <F12> :!zsh<CR>
+map! jj <ESC>
 map! <F2> <ESC>:TlistToggle<CR>
 map! <F3> <ESC>:NERDTreeToggle<CR>
 map! <F5> <ESC>:YcmForceCompileAndDiagnostics<CR>a
@@ -46,21 +53,13 @@ map <leader>a za<CR>
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
 
-" Changer de buffer
-nnoremap <leader><leader> <c-^>
-
-" Changement pour gérer les splits
-nnoremap <Leader>. <C-W><C-W>
-nnoremap <Leader>_ <C-W>_
-nnoremap <Leader>v :tabe ~/.vim/vimrc<CR>
-nnoremap <Leader><Bar> <C-W><Bar>
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 set guioptions-=T
 set t_Co=256
 set background=dark
-colorscheme desert
+colorscheme solarized
 set cursorline
 hi CursorLine cterm=NONE
 set autowriteall
@@ -87,8 +86,8 @@ if has("autocmd")
 	autocmd BufWritePost vimrc source ~/.vimrc
 endif
 
-
 set hi=150
+
 let g:ycm_key_invoke_completion = '<C-l>'
 let g:ycm_min_num_of_chars_for_completion = 1
 
@@ -96,3 +95,5 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+let g:instant_markdown_slow = 1
+let g:ycm_confirm_extra_conf = 0
