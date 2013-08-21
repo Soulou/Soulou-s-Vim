@@ -8,6 +8,6 @@ if exists('loaded_go')
 endif
 let loaded_go=1
 
-set expandtab ts=2 sts=2 sw=2
+set ts=2 sts=2 sw=2
 
 autocmd BufWritePre <buffer> Fmt
