@@ -58,8 +58,8 @@ nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 set guioptions-=T
 set t_Co=256
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme summerfruit256
 set cursorline
 hi CursorLine cterm=NONE
 set autowriteall
