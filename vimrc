@@ -15,6 +15,7 @@ set incsearch
 set ignorecase
 set smartcase
 
+let g:gofmt_command = "goimports"
 " Pathogen plugin management
 call pathogen#infect()
 
@@ -25,30 +26,34 @@ nnoremap <Leader><Bar> <C-W><Bar>
 nnoremap <leader><leader> <c-^>
 nnoremap <Leader>v :tabe ~/.vim/vimrc<CR>
 
-map <leader>o :CtrlPBuffer<cr>
-map <leader>t :CtrlP<cr>
-
-" Voir les caractères invisibles
+"" Normal mode mapping
+" Save
+nmap <C-s> :w<CR>
+" Browsing files
+nmap <leader>o :CtrlPBuffer<cr>
+nmap <leader>t :CtrlP<cr>
+" Invisible caracters
 nmap <leader>l :set list!<CR>
+" Folding
+nmap <leader>z zR<CR>
+nmap <leader>a za<CR>
 
-" CommandT rescan for new or deleted files
-
-" double percentage sign in command mode is expanded
-" to directory of current file - http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
+"" Insert mode mapping
+" Save
+imap <C-s> <Esc>:w<CR>a
+" Remap esc on jj
+imap jj <ESC>
 
 map <F2> :TlistToggle<CR>
 map <F3> :NERDTreeToggle<CR>
 map <F5> :YcmForceCompileAndDiagnostics<CR>a
+map <leader>m :!make<CR>
 map <F12> :!zsh<CR>
-map! jj <ESC>
 map! <F2> <ESC>:TlistToggle<CR>
 map! <F3> <ESC>:NERDTreeToggle<CR>
 map! <F5> <ESC>:YcmForceCompileAndDiagnostics<CR>a
 map! <F12> <ESC>:!zsh<CR>
 set pastetoggle=<F4>
-map <leader>z zR<CR>
-map <leader>a za<CR>
 
 " Remapper le caractère invisible pour la tabulation
 set listchars=tab:▸\ ,eol:$
@@ -58,8 +63,10 @@ nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 set guioptions-=T
 set t_Co=256
+let g:solarized_termcolors=256
+let g:load_doxygen_syntax=1
 set background=light
-colorscheme summerfruit256
+colorscheme codeschool
 set cursorline
 hi CursorLine cterm=NONE
 set autowriteall
@@ -81,11 +88,6 @@ let g:Powerline_symbols = 'fancy'
 " Go language 
 set rtp+=$GOROOT/misc/vim 
 
-" Auto reload vimrc
-if has("autocmd")
-	autocmd BufWritePost vimrc source ~/.vimrc
-endif
-
 set hi=150
 
 let g:ycm_key_invoke_completion = '<C-l>'
@@ -97,3 +99,13 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 let g:instant_markdown_slow = 1
 let g:ycm_confirm_extra_conf = 0
+
+
+if has("gui_running")
+  set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 13
+  set guioptions-=m  "remove menu bar
+  set guioptions-=T  "remove toolbar
+  set guioptions-=r  "remove right-hand scroll bar
+endif
+
+"let g:AutoPairsFlyMode = 1
