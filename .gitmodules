@@ -94,3 +94,6 @@
 [submodule "bundle/vim-auto-pairs"]
 	path = bundle/vim-auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/vim-ag"]
+	path = bundle/vim-ag
+	url = https://github.com/rking/ag.vim
