@@ -55,9 +55,6 @@
 [submodule "bundle/vim-youcompleteme"]
 	path = bundle/vim-youcompleteme
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "bundle/vim-go-complete"]
-	path = bundle/vim-go-complete
-	url = https://github.com/fsouza/go.vim.git
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
@@ -76,9 +73,6 @@
 [submodule "bundle/vim-syntastic"]
 	path = bundle/vim-syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-ultisnips"]
-	path = bundle/vim-ultisnips
-	url = https://github.com/vim-scripts/UltiSnips.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
@@ -88,12 +82,12 @@
 [submodule "bundle/vim-solarized"]
 	path = bundle/vim-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim-golang-alternate"]
-	path = bundle/vim-golang-alternate
-	url = https://github.com/benmills/vim-golang-alternate
 [submodule "bundle/vim-auto-pairs"]
 	path = bundle/vim-auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
 [submodule "bundle/vim-ag"]
 	path = bundle/vim-ag
 	url = https://github.com/rking/ag.vim
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
