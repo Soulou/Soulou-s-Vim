@@ -91,3 +91,6 @@
 [submodule "bundle/vim-handlebars"]
 	path = bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars
+[submodule "bundle/vim-rust"]
+	path = bundle/vim-rust
+	url = https://github.com/wting/rust.vim.git
